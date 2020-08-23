@@ -1,8 +1,13 @@
 # PBJelly
 # PBSuite_15.8.24
 ***A fork of the gap-closing pipeline PBJelly, not official.*** 
+
 ***All updates here are for in-house using and no warranty.***
+
+***非官方版本，细小修改以满足个人使用。需要官方版本请移步以下地址***
+
 Official Download address: https://sourceforge.net/projects/pb-jelly/
+
 Part of the PBSuite of applications including PB Honey(https://www.hgsc.bcm.edu/software/honey).
 
 ## Requirements
@@ -42,9 +47,9 @@ Example Protocol.xml:
     </input>
 </jellyProtocol>
 ```
+Run Jelly.py
 
 ```bash
-cd PBJelly/docs/jellyExample
 # Edit your Protocol.xml 
 Jelly.py setup Protocol.xml
 Jelly.py mapping Protocol.xml
@@ -56,4 +61,4 @@ Jelly.py output Protocol.xml
 ## Note
 - Input sequences files must be end with ".fasta" or ".fastq"
 - In Protocol.xml file, blasr options start with "--", not "-"
-- The official PBSuite would stop at "mapping step", with "Error:No such file or directory:******fastq.m4". Updates here fixed this problem by changing the blasr argument from the "-" to "--".  
+- The official PBSuite would quickly stop at "mapping step", with "Error:No such file or directory:******fastq.m4". Updates here fixed this problem by changing the blasr argument from the "-" to "--".  
